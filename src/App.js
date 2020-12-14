@@ -10,7 +10,12 @@ var emojiDictionary = {
   "😂": "laughing",
   "🧞": "genie",
   "🧟": "zombie",
-  "💃": "dancing woman"
+  "💃": "dancing woman",
+  "🥺": "pleading face",
+  "🤗": "hugging face",
+  "😋": "face savoring food",
+  "🤫": "shushing face",
+  "🤤": "drooling face"
 };
 
 const emojis = Object.keys(emojiDictionary); /** array of keys */
@@ -34,7 +39,7 @@ export default function App() {
   }
   return (
     <div className="App">
-      <h1>inside outtt</h1>
+      <h1>emoji interpreter</h1>
       <input onChange={inputChangeHandler} value={emoji} />
       <h2>{emoji}</h2>
       <h3>{meaning}</h3>
